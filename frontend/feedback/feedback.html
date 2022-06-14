@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Feedback Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form" method="POST" action="http://localhost:3000/feedback">
+				<span class="contact100-form-title">
+					Feedback Form
+				</span>
+
+				<div class="wrap-input100 rs1-wrap-input100">
+					<label class="label-input100" for="name">Name:</label>
+					<input class="input100" type="text" name="name" id="name" placeholder="Enter name" autocomplete="off">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100">
+					<label class="label-input100" for="email">Email:</label>
+					<input class="input100" type="text" name="email" id="email" placeholder="Enter email" autocomplete="off">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100">
+					<label class="label-input100" for="subject">Subject:</label>
+					<input class="input100" type="text" name="subject" id="subject" placeholder="Enter subject" autocomplete="off">
+				</div>
+
+				<div class="wrap-input100">
+					<label class="label-input100" for="message">Message:</label>
+					<textarea class="input100" name="message" id="message" placeholder="Enter message"></textarea>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							Submit
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+
+</body>
+</html>

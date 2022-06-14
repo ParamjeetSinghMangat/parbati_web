@@ -1,0 +1,340 @@
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Raleway-Black;
+  src: url('../fonts/raleway/Raleway-Black.ttf'); 
+}
+
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url('../fonts/raleway/Raleway-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url('../fonts/raleway/Raleway-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url('../fonts/raleway/Raleway-Regular.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Raleway-SemiBold, sans-serif;
+}
+
+/*---------------------------------------------*/
+a {
+	font-family: Raleway-SemiBold;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Raleway-SemiBold;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+input:focus:-moz-placeholder { color:transparent; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+input:focus::-moz-placeholder { color:transparent; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+input:focus:-ms-input-placeholder { color:transparent; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+
+textarea:focus::-webkit-input-placeholder { color:transparent; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+textarea:focus:-moz-placeholder { color:transparent; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+textarea:focus::-moz-placeholder { color:transparent; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+textarea:focus:-ms-input-placeholder { color:transparent; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+
+input::-webkit-input-placeholder { color: #adadad; font-size:16px; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+input:-moz-placeholder { color: #adadad; font-size:16px; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+input::-moz-placeholder { color: #adadad; font-size:16px; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+input:-ms-input-placeholder { color: #adadad; font-size:16px; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+
+textarea::-webkit-input-placeholder { color: #adadad; font-size:16px; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+textarea:-moz-placeholder { color: #adadad; font-size:16px; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+textarea::-moz-placeholder { color: #adadad; font-size:16px; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+textarea:-ms-input-placeholder { color: #adadad; font-size:16px; font-weight:300; font-family: Raleway-Regular, sans-serif;}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,193,104,1) 0%, rgba(251,128,128,1) 90% );
+}
+
+.wrap-contact100 {
+  max-width: 800px;
+  background: #fff;
+  border-radius: 2px;
+  padding: 66px 115px 59px 115px;
+  position: relative;
+  border-radius: 15px;
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact100-form-title {
+  display: block;
+  width: 100%;
+  font-family: Raleway-Black;
+  font-size: 30px;
+  color: #333333;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  margin-bottom: 35px;
+}
+
+.label-input100 {
+  font-family: Raleway-SemiBold;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: #f7f7f7;
+  border-radius: 2px;
+  font-family: Raleway-Regular;
+  font-size: 20px;
+  color: #111;
+  line-height: 1.2;
+  padding: 0 28px;
+  -webkit-transition: height 0.4s;
+  -o-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  transition: height 0.4s;
+}
+
+
+/*---------------------------------------------*/
+input.input100 {
+  height: 62px;
+  border-radius: 6px;
+}
+
+
+textarea.input100 {
+  min-height: 162px;
+  padding-top: 19px;
+  padding-bottom: 13px;
+  border-radius: 6px;
+}
+
+.input100:focus {
+  background: #f6f6f6;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.wrap-contact100-form-btn {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contact100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, #000 0%, #d05e32 90% );
+
+  top: 0;
+  left: -100%;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 62px;
+
+  font-family: Raleway-Bold;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.wrap-contact100-form-btn:hover .contact100-form-bgbtn {
+  left: 0;
+}
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 992px) {
+  .wrap-contact100 {
+    padding: 66px 80px 59px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rs1-wrap-input100 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+    padding: 66px 15px 59px 15px;
+  }
+}
+
+
+/*==================================================================
+[ Contact more ]*/
+
+.contact100-more {
+  display: block;
+  max-width: 960px;
+  font-family: Raleway-SemiBold;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.4;
+  text-align: center;
+  padding: 40px 0 10px 0;
+}
+
+
+
+
