@@ -4,18 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Farmer Detail Entry</title>
   </head>
+
   <body>
-    <form>
-      <div>
-        <label for="farmer_mobileno">Farmer Mobileno</label>
-        <input type="text" name="farmer_mobileno" id="farmer_mobileno" />
+    <form class="search-form">
+      <div class="input-field">
+        <label for="mobileno">Farmer Mobileno</label>
+        <input type="text" name="mobileno" id="mobileno" />
       </div>
 
-      <button type="button" name="submit" onclick="getFarmer()">Submit</button>
-      <button type="reset">Reset</button>
+      <button
+        type="button"
+        name="submit"
+        onclick="getFarmer()"
+        class="button submit-btn"
+      >
+        Submit
+      </button>
+      <button type="reset" class="button reset-btn">Reset</button>
     </form>
+
+    <div id="farmer_details">
+      <form>
+        <input type="hidden" name="farmer_sr" id="farmer_sr" value="" />
+        <div>
+          <label for="farmer_name">Farmer Name</label>
+          <input type="text" name="farmer_name" id="farmer_name" value="" />
+        </div>
+        <div>
+          <label for="farmer_address">Farmer Address</label>
+          <input
+            type="text"
+            name="farmer_address"
+            id="farmer_address"
+            value=""
+          />
+        </div>
+        <div>
+          <label for="farmer_land">Farmer Land</label>
+          <input type="text" name="farmer_land" id="farmer_land" value="" />
+        </div>
+        <div>
+          <label for="farmer_mobileno">Farmer Mobileno</label>
+          <input
+            type="text"
+            name="farmer_mobileno"
+            id="farmer_mobileno"
+            value=""
+          />
+        </div>
+        <div>
+          <label for="farmer_id">Farmer ID</label>
+          <input type="text" name="farmer_id" id="farmer_id" value="" />
+        </div>
+        <button type="button" onclick="updateFarmer()">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
     <script src="./scripts/get_farmer.js"></script>
   </body>
 </html>
